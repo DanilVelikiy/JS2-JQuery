@@ -1,0 +1,18 @@
+#panel {
+	width: 500px;
+	height: 250px;
+	background-color: gray;
+	margin: 0 auto;
+	text-align: center;
+}
+.btn-slide {
+	width: 80px;
+	height: 20px;
+	background-color: orange;
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+}
+.active {
+	background-color: red;
+}
