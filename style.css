@@ -1,3 +1,6 @@
+/*
+Выдвижная панель
+*/
 #panel {
 	width: 500px;
 	height: 250px;
@@ -16,3 +19,139 @@
 .active {
 	background-color: red;
 }
+/*
+Красивые исчезновения.
+*/
+.pane {
+	padding: 5px;
+	margin: 0 auto;
+	text-align: center;
+	width: 400px;
+	height: 200px;
+	border-radius: 10px;
+	border: 4px solid red;
+	background-color: gray;
+}
+.box-quest-two {
+	padding-top: 50px;
+}
+.delete {
+	width: 30px;
+	height: 30px;
+	float: right;
+}
+.text-title {
+	color: black;
+	font-size: 16px;
+	font-family: tahoma;
+}
+.text {
+	color: black;
+	font-size: 12px;
+	font-family: tahoma;	
+}
+/*
+Связанная анимация
+*/
+.b-box-association-animation {
+	width: 400px;
+	height: 200px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	position: absolute;
+}
+.run {
+	color: gray;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: arial;
+	margin-bottom: 10px;
+}
+#box {
+	width: 100px;
+	height: 100px;
+	background-color: gray;
+	position: relative;
+/*
+	ВКЛАДКИ
+*/
+}
+.b-box-bus-vkladki {
+	width: 400px;
+	height: 400px;
+	margin-top: 200px;
+	margin-bottom: 50px;
+	/*это для выравнивания текста
+	 по высоте корешка вкладки. Но надо
+	 смотреть, может по другому решать,
+	 т.к. из-за абсолютного позиционирования
+	 не работает выравнивание по горизонтали :) */
+	position: absolute;
+}
+.b-box-door-vkladki {
+	width: 100%;
+	height: 80px;
+}
+.b-door-vkladka {
+	width: 30%;
+	height: 98%;
+	border: 1px solid orange;
+	float: left;
+	text-align: center;
+	margin-right: 8px;
+	border-radius: 10px 10px 0 0;
+
+}
+/*это для выравнивания текста
+	 по высоте корешка вкладки*/
+.b-door-vkladka::before {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	content: "";
+}
+.b-box-window {
+	width: 100%;
+	
+	border: 1px solid orange;
+}
+.vkladka_active_orange {
+	background-color: orange;
+}
+
+.vkladka_notactive_gray {
+	background-color: gray;
+}
+.vkladka_title {
+	font-family: tahoma;
+	font-size: 14px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.vkladka_text {
+	margin-top: 0;
+}
+.notactive_vkladka {
+	display: none;
+	float: left;
+}
+.active_vkladka {
+	display: block;
+	float: left;
+}
+.b-box-window_one,
+.b-box-window_two {
+	font-size: 14px;
+	line-height: 23px;
+	font-family: tahoma;
+	padding: 20px;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*
+Soli Deo Gloria
+*/
